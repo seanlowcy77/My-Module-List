@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# My Module List Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app). My Module List is a Single Page Application developed with a Model-View-Controller architecture that interacts with the [backend API](https://github.com/seanlowcy77/My-Module-List). This application makes use of the [NUSMods API](https://api.nusmods.com/v2/). NUSMods is an student run application founded in 2012 to provide a better way for students to plan their school timetables. Over time, more features have been added to improve the lives of NUS students. It is available [here](https://nusmods.com/timetable/sem-1)!
 
-## Available Scripts
+## 1. How to Start
 
-In the project directory, you can run:
+In the root directory, run `nodemon start` to start the backend. More about the backend may be viewed [here](https://github.com/seanlowcy77/My-Module-List). Next open another tab and enter `cd client` to enter the client directory. After than run `npm start` to start the front end segment of the application.
 
-### `yarn start`
+Open [http://localhost:3000](http://localhost:3000) to view the backend APIs in the browser. Open [http://localhost:3001](http://localhost:3001) to view the 'My Module List' application itself.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 2. Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Home page](https://github.com/seanlowcy77/My-Module-List/blob/master/client/images/Home%20page.png)
 
-### `yarn test`
+An image of the Home page of the application may be seen above. The application has 4 main functionalities:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Viewing of Module List and Modules
 
-### `yarn build`
+In the image above, we can see the modules that we have added into our list. In addition, upon using the search bar above, we can view more specific information about each module. For example, upon searching 'CS4222', we will reach the following page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Search result for CS4222](https://github.com/seanlowcy77/My-Module-List/blob/master/client/images/Module%20search.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You will be able to view the description of the module, its module credits as well as the prerequisites. As mentioned above, this part of the application makes use of the [NUSMods API](https://api.nusmods.com/v2/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Adding of Modules
 
-### `yarn eject`
+As shown in the above image, to add a new module to your list, simply click on the `ADD MODULE TO LIST` button below. You will then be directed to the Home page and the list will be updates with your new module (In this case CS4222)! If the module already exists in your list, an alert will be sent.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 3. Deleting of Modules
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To Delete a module, simply enter the module code in the Home page segment. An alert will then pop up to inform you that the module has been deleted. If the module does not exist in the list, a different alert will pop up to inform you that the module does not exist.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 4. Modification of Modules
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To Modify a module, simply enter the old module code as well as the new module code that you want to change to in the Home page segment. An alert will pop up if the module that you want to change does not exist in the module list. Otherwise, it will display success and update the module list upon changing it!
 
-## Learn More
+## 3. Testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Testing of the APIs were done via Chai and Mocha. Simply run `npm test` in the root directory (not the current client directory) to see the results of the tests. Travis also helps automate these tests with the `travis.yml` file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 4. MVC Architecture Pattern
 
-### Code Splitting
+![MVC Wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/400px-MVC-Process.svg.png)
+This application uses the MVC architecture. The various components in the application serve as the `Controller` in updating the `Model` / backend. Firstly a user interacts with these components - adding, deleting or updating modules. The `Controller` (components) then send these requests to the backend (The `Model`) - The `Model` / the backend of the application is responsible for storing the list of modules. The `Model` then updates the `View` for the user - in this case the list of modules.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Things to Note
 
-### Analyzing the Bundle Size
+1. If you wish to use a different port for running the backend, you will need to change the `URL` variable in the `constants` directory. Currently it is set as default to `http://localhost:3000/api/courses/`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. All dependencies may be found in the `package.json` file.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Do not hesitate to reach out to me if you have any queries. Hope this application will shed some light especially to people who are giving their first go in creating a Single page application. Thank you!
