@@ -1,8 +1,8 @@
-# Simple Get, Post, Put, Delete API
+# APIs for My Module List
 
 ## 1. Introduction
 
-This code was made using Node, Express and Joi. It is my first go at creating a simple Get, Post, Put and Delete API. Note that Express uses the HTTP protocol. In the code, you can observe that there are originally 3 courses:
+This code was made using Node, Express and Joi. It is my first go at creating a simple Get, Post, Put and Delete API. The APIs are used for the Module List Application. While this README is for the APIs, more about the application may be found [!here](https://github.com/seanlowcy77/My-Module-List/tree/master/client). Note that Express uses the HTTP protocol. In the code, you can observe that there are originally 3 courses:
 
 ```
     { id: 1, name: "CS1010S" },
@@ -158,7 +158,11 @@ git push heroku master
 
 If you are deploying your own apps in future a reminder to be careful of `scripts` in `package.json`. If you do not define it, Heroku will automatically run `npm start` instead. More about this [here](https://devcenter.heroku.com/changelog-items/1557).
 
-## 5. Requirements
+## 5. Testing
+
+Testing of the APIs were done via Chai and Mocha. Simply run `npm test` in the root directory to see the results of the tests. Travis also helps automate these tests with the `travis.yml` file.
+
+## 6. Requirements
 
 The file is currently run on
 
