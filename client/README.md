@@ -1,6 +1,6 @@
 # My Module List Application
 
-This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app). My Module List is a Single Page Application developed with a Model-View-Controller architecture that interacts with the [backend API](https://github.com/seanlowcy77/My-Module-List). This application makes use of the [NUSMods API](https://api.nusmods.com/v2/). NUSMods is an student run application founded in 2012 to provide a better way for students to plan their school timetables. Over time, more features have been added to improve the lives of NUS students. It is available [here](https://nusmods.com/timetable/sem-1)!
+This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app). `My Module List` is a Single Page Application developed with a `Model-View-Controller` architecture that interacts with the [backend API](https://github.com/seanlowcy77/My-Module-List). This application makes use of the [NUSMods API](https://api.nusmods.com/v2/). NUSMods is an student run application founded in 2012 to provide a better way for students to plan their school timetables. Over time, more features have been added to improve the lives of NUS students. It is available [here](https://nusmods.com/timetable/sem-1)!
 
 ## 1. How to Start
 
@@ -41,7 +41,8 @@ Testing of the APIs were done via Chai and Mocha. Simply run `npm test` in the r
 ## 4. MVC Architecture Pattern
 
 ![MVC Wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/400px-MVC-Process.svg.png)
-This application uses the MVC architecture. The various components in the application serve as the `Controller` in updating the `Model` / backend. Firstly a user interacts with these components - adding, deleting or updating modules. The `Controller` (components) then send these requests to the backend (The `Model`) - The `Model` / the backend of the application is responsible for storing the list of modules. The `Model` then updates the `View` for the user - in this case the list of modules.
+
+This application uses the Model-View-Controller architecture. The various components in the application serve as the `Controller` in updating the `Model` / backend. Firstly a user interacts with these components - adding, deleting or updating modules. The `Controller` (components) then send these requests to the backend (The `Model`) - The `Model` / the backend of the application is responsible for storing the list of modules. The `Model` then updates the `View` for the user - in this case the list of modules.
 
 ## Things to Note
 
