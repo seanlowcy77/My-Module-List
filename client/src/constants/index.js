@@ -1,1 +1,1 @@
-export const URL = "https://ndcvubv6ld.execute-api.us-east-1.amazonaws.com/production/api/courses/"
+export const URL = $REACT_APP_API_LINK
