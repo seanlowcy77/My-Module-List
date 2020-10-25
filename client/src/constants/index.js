@@ -1,1 +1,1 @@
-export const URL = API_LINK
+export const URL = $API_LINK
