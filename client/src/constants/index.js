@@ -1,1 +1,1 @@
-export const URL = "http://localhost:3000/api/courses/"
+export const URL = API_LINK
