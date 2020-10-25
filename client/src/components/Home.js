@@ -111,6 +111,7 @@ class Home extends Component {
                                 {item.name} 
                             </div>
                         ))}
+                        &nbsp;
                         <h3> Delete Module </h3>
                         <form onSubmit = {this.handleSubmitDelete}>
                             <input onChange = {this.deleteInputChange} value = {this.state.deleteContent} type="text" className="form-control" placeholder="Which course would you like to delete? (Note: Case sensitive)" />
