@@ -6,7 +6,7 @@ This project was originally bootstrapped with [Create React App](https://github.
 
 In the root directory, run `nodemon start` to start the backend. More about the backend may be viewed [here](https://github.com/seanlowcy77/My-Module-List). Next open another tab and enter `cd client` to enter the client directory. After than run `npm start` to start the front end segment of the application.
 
-Open [http://localhost:3000](http://localhost:3000) to view the backend APIs in the browser. Open [http://localhost:3001](http://localhost:3001) to view the 'My Module List' application itself.
+Open [http://localhost:3000](http://localhost:3000) to view the backend APIs in the browser. Open [http://localhost:3001](http://localhost:3001) or whichever port the frontend runs on to view the 'My Module List' application itself.
 
 ## 2. Features
 
