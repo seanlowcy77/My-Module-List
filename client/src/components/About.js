@@ -11,7 +11,7 @@ const About = () => {
             <p>This Module List Application was created by <a href = "https://github.com/seanlowcy77">Sean Low</a></p>
             <p>With regards to the modules and the information regarding them, they were retrieved from NUSMods: 
             <a href = "https://api.nusmods.com/v2/"> Link here</a></p>
-            <p> Hope you have enjoyed it! </p>
+            <p> Hope you have enjoyed it ! </p>
             </div>
         </div>
     );
