@@ -1,1 +1,1 @@
-export const URL = $API_LINK
+export const URL = "https://ndcvubv6ld.execute-api.us-east-1.amazonaws.com/production/api/courses/"
