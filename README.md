@@ -162,7 +162,7 @@ If you are deploying your own apps in future a reminder to be careful of `script
 
 Testing of the APIs were done via Chai and Mocha. Simply run `npm test` in the root directory to see the results of the tests. Travis also helps automate these tests with the `travis.yml` file.
 
-![Testcases success](https://github.com/seanlowcy77/My-Module-List/tree/master/images/Testcases.png)
+![Testcases success](https://github.com/seanlowcy77/My-Module-List/blob/master/images/Testcases.png)
 
 ## 6. Requirements
 
