@@ -2,6 +2,9 @@
 
 This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app). `My Module List` is a Single Page Application developed with a `Model-View-Controller` architecture that interacts with the [backend API](https://github.com/seanlowcy77/My-Module-List). This application makes use of the [NUSMods API](https://api.nusmods.com/v2/). NUSMods is an student run application founded in 2012 to provide a better way for students to plan their school timetables. Over time, more features have been added to improve the lives of NUS students. It is available [here](https://nusmods.com/timetable/sem-1)!
 
+This application was done using a combination of React, Express and Node. It was done to experiment the creation of APIs as well as how continuous integration and deployment. More about the APIs may be found [here](https://github.com/seanlowcy77/My-Module-List). The application has been deployed using Netlifly. The application is available on the link below!
+https://my-module-list.netlify.app/
+
 ## 1. How to Start
 
 In the root directory, run `nodemon start` to start the backend. More about the backend may be viewed [here](https://github.com/seanlowcy77/My-Module-List). Next open another tab and enter `cd client` to enter the client directory. After than run `npm start` to start the front end segment of the application.
