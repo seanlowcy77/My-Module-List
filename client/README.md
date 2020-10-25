@@ -36,7 +36,11 @@ To Modify a module, simply enter the old module code as well as the new module c
 
 ## 3. Testing
 
-Testing of the APIs were done via Chai and Mocha. Simply run `npm test` in the root directory (not the current client directory) to see the results of the tests. Travis also helps automate these tests with the `travis.yml` file.
+Testing of the APIs were done via Chai and Mocha. Simply run `npm test` in the root directory (not the current client directory) to see the results of the tests. Travis also helps automate these tests with the `travis.yml` file. All test cases should pass.
+
+![Testcases success](https://github.com/seanlowcy77/My-Module-List/blob/master/images/Testcases.png)
+
+
 
 ## 4. MVC Architecture Pattern
 
